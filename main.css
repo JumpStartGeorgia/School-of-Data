@@ -1,0 +1,281 @@
+body {
+	margin: 0;
+	padding: 0;
+	}
+	
+.center {
+    margin: auto;
+    width: 80%;
+    max-width: 1000px;
+	}
+	
+h1 {
+	font-family: 'titillium_bdbold';
+	font-size: 28px;
+	}
+	
+b {
+	font-family: 'titillium_bdbold';
+	}
+	
+p {
+	font-family: 'titilliumlight';
+	}
+	
+span {
+	font-family: 'titilliumlight';
+	font-size: 24px;
+	}
+
+nav {
+	height: 90px;
+	background: #1c1c1c;
+	opacity: 0.8;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	z-index: 700;
+    position: fixed;
+	width: 100%;
+	}
+
+#logo {
+	flex-basis: 66%;
+	float: left;
+	margin: 1em 1.5em;
+	}
+	
+.nav-icons {
+	margin-right: 25px;
+	flex-basis: 17%;
+	margin: 1.7em 1.5em;
+	}
+
+header {
+	background: url('images/header.jpg') no-repeat center;
+	/*background-size: cover; */
+	height: 545px;
+	position: relative;
+	}
+	
+.inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+    height: 90%;
+    padding: 0px 25px;
+	}
+	
+.inner p {
+	font-family: 'titillium_bdbold';
+    font-size: 30px;
+	text-align: center;
+	color: white;
+	display: block;
+	max-width: 500px;
+	}
+
+#what {
+	display: block;
+	text-align: right;
+	}
+	
+#what h1 {
+	padding: 40px 25px 0 0;
+	}
+	
+#what span {
+	font-family: 'titilliumregular';
+	font-size: 18px;
+	}
+	
+.flex-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	list-style: none;
+	}
+	
+.flex-container li {
+	margin: 30px;	
+	}
+	
+.drop {
+	display: block;
+	text-align: center;
+	margin-top: 15px;
+	}
+	
+li img {
+	display: block;
+	text-align: center;
+	margin: 0px auto;
+	}
+	
+		
+#ongoing {
+	position: relative;
+	width: 100%;
+	}
+	
+#yellow-box-container {
+	width: 100%;
+	position: relative;
+	}
+	
+#yellow-box-container::after {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: #1c1c1c;
+    }
+	
+#yellow-box {
+	background: #f6b72d;
+	padding: 2em 2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	position: relative;
+	z-index: 2;
+	}
+	
+#yellow-box::after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: '';
+	height: 0px;
+	width: 0px;
+	position: absolute;
+	pointer-events: none;
+	border-top-color: #f6b72d;
+	border-width: 15px;
+	border-left-width: 20px;
+	border-right-width: 20px;
+	margin-left: -40px;
+	}
+	
+#title + div {
+	margin: auto;
+	text-align: center;
+	}
+		
+#title {
+	color: white;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	}
+	
+#title img {
+    margin-right: 1em;
+    }
+    
+#title h1 {
+    margin: 0px;
+    }
+	
+#black-box {
+	background: #1c1c1c;
+	padding: 10px 0;
+	}
+
+#text {
+	padding: 20px 0;
+	color: white;
+	}
+	
+#black-box p {
+	text-align: left;
+	display: inline-block;
+	font-size: 18px;
+	}
+	
+#black-box span {
+	display: inline-block;
+	font-size: 16px;
+	}
+	
+.left {
+	float: left;
+	}
+	
+.right {
+	float: right;
+	}
+	
+.texture {
+	background: url('images/contact_bg.png') repeat left;
+	padding: 25px;
+	}
+	
+#contact h1 {
+	color: #c32e30;
+	}
+	
+#contact p {
+	font-size: 24px;
+	}
+
+#contact ul {
+	list-style: none;
+	margin-left: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	}
+
+#contact ul li {
+	line-height: 1.2;
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: center;
+	}
+
+#contact ul li::before {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+	display: block;
+	content: '';
+	margin-right: 20px;
+	width: 60px;
+	height: 60px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	}
+
+#phone::before {
+	background: url('images/phone.svg') center no-repeat;
+	}
+	
+#address::before {
+	background: url('images/address.svg') center no-repeat;
+	}
+	
+#email::before {
+	background: url('images/mail.svg') center no-repeat;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
