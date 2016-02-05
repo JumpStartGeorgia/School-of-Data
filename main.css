@@ -11,7 +11,8 @@ body {
 	
 h1 {
 	font-family: 'titillium_bdbold';
-	font-size: 28px;
+	font-size: 23px;
+	margin: 0.5em 0em;
 	}
 	
 b {
@@ -24,7 +25,6 @@ p {
 	
 span {
 	font-family: 'titilliumlight';
-	font-size: 24px;
 	}
 
 nav {
@@ -33,6 +33,7 @@ nav {
 	opacity: 0.8;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	flex-wrap: nowrap;
 	z-index: 700;
     position: fixed;
@@ -40,19 +41,26 @@ nav {
 	}
 
 #logo {
-	flex-basis: 66%;
+	flex-basis: 60%;
 	float: left;
-	margin: 1em 1.5em;
+	padding: 0em 1em;
 	}
 	
 .nav-icons {
-	margin-right: 25px;
-	flex-basis: 17%;
-	margin: 1.7em 1.5em;
+	flex-basis: 20%;
+	margin: 0em 1.2em 0em 0em;
+	}
+	
+#share img {
+	width: 25px;
+	}
+
+#menu img {
+	width: 27px;
 	}
 
 header {
-	background: url('images/header.jpg') no-repeat center;
+	background: #1c1c1c url('images/header.jpg') no-repeat center;
 	/*background-size: cover; */
 	height: 545px;
 	position: relative;
@@ -64,12 +72,12 @@ header {
 	justify-content: flex-end;
 	align-items: center;
     height: 90%;
-    padding: 0px 25px;
+    padding: 0em 1.5em;
 	}
 	
 .inner p {
 	font-family: 'titillium_bdbold';
-    font-size: 30px;
+    font-size: 22px;
 	text-align: center;
 	color: white;
 	display: block;
@@ -82,29 +90,35 @@ header {
 	}
 	
 #what h1 {
-	padding: 40px 25px 0 0;
+	padding: 1.5em 1.5em 0em 0em;
 	}
 	
 #what span {
 	font-family: 'titilliumregular';
-	font-size: 18px;
+	font-size: 16px;
 	}
 	
 .flex-container {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	flex-wrap: wrap;
 	list-style: none;
+	padding: 0px;
 	}
 	
 .flex-container li {
-	margin: 30px;	
+	margin: 15px 10px;
+	width: 100px;	
+	}
+	
+.mobile-what {
+	width: 70px;
 	}
 	
 .drop {
 	display: block;
 	text-align: center;
-	margin-top: 15px;
+	margin-top: 10px;
 	}
 	
 li img {
@@ -138,7 +152,8 @@ li img {
 	
 #yellow-box {
 	background: #f6b72d;
-	padding: 2em 2em;
+	font-size: 24px;
+	padding: 1em 1em;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -160,7 +175,7 @@ li img {
 	border-width: 15px;
 	border-left-width: 20px;
 	border-right-width: 20px;
-	margin-left: -40px;
+	margin-left: -20px;
 	}
 	
 #title + div {
@@ -177,7 +192,8 @@ li img {
 	}
 	
 #title img {
-    margin-right: 1em;
+    margin-right: 0.5em;
+    width: 30px;
     }
     
 #title h1 {
@@ -215,7 +231,11 @@ li img {
 	
 .texture {
 	background: url('images/contact_bg.png') repeat left;
-	padding: 25px;
+	}
+	
+#contact {
+	padding: 1em 0em;
+	font-size: 20px;
 	}
 	
 #contact h1 {
@@ -223,9 +243,9 @@ li img {
 	}
 	
 #contact p {
-	font-size: 24px;
+	line-height: 1.3;
 	}
-
+	
 #contact ul {
 	list-style: none;
 	margin-left: 30px;
@@ -237,7 +257,7 @@ li img {
 #contact ul li {
 	line-height: 1.2;
     position: relative;
-    height: 100px;
+    height: 75px;
     display: flex;
     align-items: center;
 	}
@@ -270,9 +290,151 @@ li img {
 	background: url('images/mail.svg') center no-repeat;
 	}
 	
+#partners {
+	background-color: rgba(255, 255, 255, 0.8);
+	}
 	
+#partners h1 {
+	color: #f6b72d;
+	margin-bottom: 0.625em;
+	}
+
+#partners ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 1em 0em;
+	margin: 0em;
+	}
 	
+#partners ul li {
+	margin: 15px 0px;
+	}
+
 	
+
+@media screen and (min-width: 650px){
+
+h1 {
+	font-size: 28px;
+	}
+
+#logo {
+	flex-basis: 66%;
+	margin: 0em 1.5em;
+	}
+
+#logo img {
+	height: 50px;
+	}
+
+.nav-icons {
+	flex-basis: 17%;
+	margin: 0em 1.5em;
+	}
+	
+#what span {
+	font-size: 18px;
+	}
+	
+.mobile-what {
+	width: 76px;
+	}
+	
+.flex-container li {
+	width: 120px;
+	}
+	
+#title img {
+	margin-right: 1em;
+    width: 35px;
+    }
+
+#contact {
+	font-size: 24px;
+	}
+	
+#contact ul li {
+    height: 100px;
+	}
+
+#partners h1 {
+	flex-basis: 100%;
+	}
+
+#partners ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0px;
+	margin: 0px;
+	}
+
+#partners ul li {
+	margin: 15px 30px 15px 0px;
+	}
+	
+#partners ul li:first-child {
+	margin: 15px 25px 15px 0px;
+	flex-basis: 100%;
+	}
+
+
+}
+
+
+@media screen and (min-width: 1000px) {
+
+header {
+	background: #1c1c1c url('images/header.jpg') no-repeat right;
+/* 	background-size: 800px 545px; */
+	}
+	
+.inner {
+	align-items: flex-start;
+    height: 90%;
+	}
+
+.inner p {
+	font-family: 'titilliumregular';
+    font-size: 28px;
+	text-align: left;
+	max-width: 305px;
+	}
+
+#partners h1 {
+	margin: 0px 85px 0px 0px;
+	}
+
+#partners ul {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0px;
+	}
+
+#partners ul li:first-child {
+	margin-right: 25px;
+	flex-basis: auto;
+	}
+
+#partners ul li:nth-child(2) {
+	margin-right: 65px;
+	}
+
+}
+
+
+
+
+
+
+
 	
 	
 	
