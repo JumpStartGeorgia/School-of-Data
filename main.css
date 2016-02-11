@@ -27,11 +27,8 @@ span {
 	font-family: 'titilliumlight';
 	}
 
-header {
-	background: #1c1c1c url('images/header.jpg') no-repeat center;
-	/*background-size: cover; */
-	height: 545px;
-	position: relative;
+ul {
+	margin: 0px;
 	}
 
 #nav {
@@ -50,6 +47,10 @@ header {
 	flex-basis: 60%;
 	float: left;
 	margin: 0em 1em;
+	}
+	
+#desktop-logo {
+	display: none;
 	}
 	
 #mobile{
@@ -102,40 +103,53 @@ body.menu-active #menu-items {
 	display: block;
 	}
 
-.drop-menu {
+#menu-items {
 	width: 100%;
 	}
 
-.drop-menu ul {
+#menu-items ul {
 	list-style: inside none none;
 	margin-top:0;
 	padding: 0px 20px;
 	text-align: center;
 	}
 	
-.drop-menu > ul > li {
+#menu-items > ul > li {
 	margin-top:0;
 	border-top:1px solid #3c3c3c;
 	position:relative;
 	}
 	
-.drop-menu > ul > li a {
+#menu-items > ul > li a {
 	color: white;
 	cursor: pointer;
 	text-decoration: none;
-	font-size: 1em;
+	font-size: 1.2em;
 	font-family: 'titilliumregular';
 	display: block;
-	padding:10px 30px;
+	padding:15px 30px;
 	}	
+	
+#presentation {
+	position: relative;
+	}
+	
+#cover {
+	background: #1c1c1c url('images/header.jpg') no-repeat center;
+	height: 545px;
+	}
 	
 .inner {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
-    height: 90%;
-    padding: 0em 1.5em;
+    padding: 0em;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+	left: 0px;
+	bottom: 0px;
 	}
 	
 .inner p {
@@ -145,6 +159,7 @@ body.menu-active #menu-items {
 	color: white;
 	display: block;
 	max-width: 500px;
+	margin: 0em 1em 3em 1em;
 	}
 
 #what {
@@ -372,7 +387,7 @@ li img {
 	}
 	
 #partners ul li {
-	margin: 15px 0px;
+	margin: 0px 0px 15px 0px;
 	}
 
 	
@@ -381,11 +396,6 @@ li img {
 
 h1 {
 	font-size: 28px;
-	}
-
-#logo {
-	flex-basis: 66%;
-	margin: 0em 1.5em;
 	}
 
 #logo img {
@@ -436,13 +446,9 @@ h1 {
 	padding: 20px 0px;
 	margin: 0px;
 	}
-
-#partners ul li {
-	margin: 15px 30px 15px 0px;
-	}
 	
 #partners ul li:first-child {
-	margin: 15px 25px 15px 0px;
+	margin: 0px 25px 15px 0px;
 	flex-basis: 100%;
 	}
 
@@ -452,58 +458,98 @@ h1 {
 
 @media screen and (min-width: 1000px) {
 
-header {
-	background: #1c1c1c url('images/header.jpg') no-repeat right;
-	}
-
 #nav {
+	display: block;
 	height: auto;
 	background: #1c1c1c;
 	opacity: 1;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: nowrap;
-	z-index: 6;
     position: absolute;
 	width: 100%;
+	float: right;
 	}
 
 #logo {
-	flex-basis: 60%;
-	float: left;
-	margin: 0em 1em;
+	width: 361px;
+	background: yellow;
+	flex-basis: initial;
 	}
 	
-nav{
-	flex-basis: 40%;
-	margin: 0em 1.2em 0em 0em;
-	display: flex;
-	}
+#mobile {
+    margin: 0em;
+    display: inline-block;
+    height: 100%;
+    background: red;
+    height: 52px;
+    float: right;
+}
 
 #share {
-	flex-basis: 50%;
+	margin: 0em 1.2em 0em 0em;
 	}
 
 #menu {
-	flex-basis: 50%;
+	display: none;
 	}
 	
 #share img {
-	width: 25px;
+	width: 22px;
 	}
 
-#menu img {
-	width: 27px;
+#logo img{
+	height: 87px;
+	}
+
+#mobile-logo {
+	display: none;
+	}
+	
+#menu-items {
+	display: block;
+	position: relative;
+	top: 0px;
+	bottom: 0px;
+	left: auto;
+	right: 0px;
+	}
+	
+#menu-items > ul > li {
+	border-top: none;
+	float: left;
+	text-align: left;
+	}
+	
+#menu-items > ul > li a {
+	font-size: 1em;
+	font-family: 'titilliumlight';
+	display: inline-block;
+	padding: 0.9375em 0em;
+	margin-right: 2.5em;
+	}		
+	
+#cover {
+	background: #1c1c1c url('images/header.jpg') no-repeat right;
 	}
 	
 .inner {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	align-items: center;
-    padding: 0em 1.5em;
-    align-items: flex-start;
+	align-items: flex-start;
+	}
+	
+.inner div {
+	background-color: #1c1c1c;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: space-around;
+	}
+	
+#desktop-logo {
+	display: inline-block;
+	position: relative;
+	margin: 2em;
 	}
 	
 .inner p {
@@ -514,7 +560,6 @@ nav{
 	text-align: left;
 	max-width: 305px;
 	}
-	
 
 #partners h1 {
 	margin: 0px 85px 0px 0px;
@@ -539,6 +584,20 @@ nav{
 
 }
 
+
+/*
+@media screen and (min-width: 1088px) {
+
+#logo {
+	flex-basis: 25%;
+	}
+	
+#menu-items {
+	flex-basis: 70%;
+	}
+
+}
+*/
 
 
 
