@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	font-family: 'Titillium';
 	}
 	
 .center {
@@ -10,23 +11,23 @@ body {
 	}
 	
 h1 {
-	font-family: 'titillium_bdbold';
+	font-weight: bold;
 	font-size: 23px;
 	margin: 0.5em 0em;
 	}
 	
 b {
-	font-family: 'titillium_bdbold';
+	font-weight: bold;;
 	}
 	
 p {
-	font-family: 'titilliumlight';
+	font-weight: 300;
 	margin: 0px;
 	padding: 0px;
 	}
 	
 span {
-	font-family: 'titilliumlight';
+	font-weight: 300;
 	}
 
 ul {
@@ -36,6 +37,8 @@ ul {
 
 header {
 	display: block;
+	position: relative;
+	padding-bottom: 7px;
 	}
 
 .brand {
@@ -103,9 +106,14 @@ body.menu-active #menu-items {
 	cursor: pointer;
 	text-decoration: none;
 	font-size: 1.2em;
-	font-family: 'titilliumregular';
+	font-weight: normal;
 	display: block;
 	padding:15px 30px;
+	}
+	
+#menu-items > ul > li:first-child a {
+	color: #f6b72d;
+	font-size: 1em;
 	}
 	
 #menu-items > ul > li a:hover, #menu-items > ul > li a:active {
@@ -192,19 +200,23 @@ body.share-active #share .children {
 	}
 	
 #desc p {
-	font-family: 'titillium_bdbold';
+	font-weight: bold;
     font-size: 22px;
 	text-align: center;
 	color: white;
 	display: block;
 	max-width: 500px;
-	margin: 0em 1em 3em 1em;
+	margin: 0em 1em 7em 1em;
 	}
 	
 #separator {
 	background: url('images/separator.svg') no-repeat bottom center;
 	height: 221px;
 	z-index: 5;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
 	}
 
 #what {
@@ -214,11 +226,13 @@ body.share-active #share .children {
 	}
 	
 #what h1 {
-	padding: 1.5em 1.5em 0em 0em;
+	padding-right: 1.5em;
+	margin-top: 0em;
+	margin-bottom: 1.5em;
 	}
 	
 #what span {
-	font-family: 'titilliumregular';
+	font-weight: normal;
 	font-size: 1em;
 	}
 	
@@ -532,7 +546,7 @@ li img {
 		}
 		
 	#desc p {
-		font-family: 'titilliumregular';
+		font-weight: normal;
 	    font-size: 28px;
 		text-align: left;
 		margin: 1.2em 1em;
@@ -580,7 +594,7 @@ li img {
 		
 	#menu-items > ul > li a {
 		font-size: 1em;
-		font-family: 'titilliumlight';
+		font-weight: 300;
 		display: inline-block;
 		padding: 0.9375em 0em;
 		margin-right: 2em;
@@ -589,6 +603,10 @@ li img {
 		text-decoration: none;
 		}
 		
+	#menu-items > ul > li:first-child {
+		display: none;
+		}
+	
 	#share {
 		padding: 0.6em 0.7em;
 		display: inline-block;
@@ -631,6 +649,12 @@ li img {
 		
 	#language a:hover {
 		text-decoration: underline;
+		}
+		
+	#separator {
+		background: url('images/separator.svg') no-repeat bottom right;
+		background-size: 100%;
+		height: 313px;
 		}
 	
 	#partners h1 {
